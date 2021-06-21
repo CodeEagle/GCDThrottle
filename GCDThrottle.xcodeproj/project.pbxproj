@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10226FAF26803F79000FD04A /* GCDThrottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 10226FAD26803F79000FD04A /* GCDThrottle.m */; };
 		879FE39C1CF3F51600F6DC4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 879FE39B1CF3F51600F6DC4D /* main.m */; };
 		879FE39F1CF3F51600F6DC4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 879FE39E1CF3F51600F6DC4D /* AppDelegate.m */; };
 		879FE3A21CF3F51600F6DC4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 879FE3A11CF3F51600F6DC4D /* ViewController.m */; };
 		879FE3A51CF3F51600F6DC4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879FE3A31CF3F51600F6DC4D /* Main.storyboard */; };
 		879FE3A71CF3F51600F6DC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879FE3A61CF3F51600F6DC4D /* Assets.xcassets */; };
 		879FE3AA1CF3F51600F6DC4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879FE3A81CF3F51600F6DC4D /* LaunchScreen.storyboard */; };
-		879FE3B31CF3F54E00F6DC4D /* GCDThrottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 879FE3B21CF3F54E00F6DC4D /* GCDThrottle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10226FAD26803F79000FD04A /* GCDThrottle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDThrottle.m; sourceTree = "<group>"; };
+		10226FAE26803F79000FD04A /* GCDThrottle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDThrottle.h; sourceTree = "<group>"; };
 		879FE3971CF3F51600F6DC4D /* GCDThrottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDThrottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879FE39B1CF3F51600F6DC4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		879FE39D1CF3F51600F6DC4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		879FE3A61CF3F51600F6DC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		879FE3A91CF3F51600F6DC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		879FE3AB1CF3F51600F6DC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		879FE3B11CF3F54E00F6DC4D /* GCDThrottle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDThrottle.h; sourceTree = "<group>"; };
-		879FE3B21CF3F54E00F6DC4D /* GCDThrottle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDThrottle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,9 +42,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10226FAA26803F79000FD04A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				10226FAB26803F79000FD04A /* GCDThrottle */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		10226FAB26803F79000FD04A /* GCDThrottle */ = {
+			isa = PBXGroup;
+			children = (
+				10226FAC26803F79000FD04A /* include */,
+			);
+			path = GCDThrottle;
+			sourceTree = "<group>";
+		};
+		10226FAC26803F79000FD04A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				10226FAD26803F79000FD04A /* GCDThrottle.m */,
+				10226FAE26803F79000FD04A /* GCDThrottle.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		879FE38E1CF3F51600F6DC4D = {
 			isa = PBXGroup;
 			children = (
+				10226FAA26803F79000FD04A /* Sources */,
 				879FE3991CF3F51600F6DC4D /* GCDThrottle */,
 				879FE3981CF3F51600F6DC4D /* Products */,
 			);
@@ -61,8 +87,6 @@
 		879FE3991CF3F51600F6DC4D /* GCDThrottle */ = {
 			isa = PBXGroup;
 			children = (
-				879FE3B11CF3F54E00F6DC4D /* GCDThrottle.h */,
-				879FE3B21CF3F54E00F6DC4D /* GCDThrottle.m */,
 				879FE39D1CF3F51600F6DC4D /* AppDelegate.h */,
 				879FE39E1CF3F51600F6DC4D /* AppDelegate.m */,
 				879FE3A01CF3F51600F6DC4D /* ViewController.h */,
@@ -123,6 +147,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -154,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879FE3B31CF3F54E00F6DC4D /* GCDThrottle.m in Sources */,
+				10226FAF26803F79000FD04A /* GCDThrottle.m in Sources */,
 				879FE3A21CF3F51600F6DC4D /* ViewController.m in Sources */,
 				879FE39F1CF3F51600F6DC4D /* AppDelegate.m in Sources */,
 				879FE39C1CF3F51600F6DC4D /* main.m in Sources */,
@@ -306,6 +331,7 @@
 				879FE3B01CF3F51600F6DC4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
